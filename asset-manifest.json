@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/card-counter/static/css/main.506f238b.css",
+    "main.js": "/card-counter/static/js/main.0797e761.js",
+    "static/js/787.d7d63c77.chunk.js": "/card-counter/static/js/787.d7d63c77.chunk.js",
+    "static/media/8_of_clubs.png": "/card-counter/static/media/8_of_clubs.78dfd7432da623ecf09e.png",
+    "static/media/10_of_diamonds.png": "/card-counter/static/media/10_of_diamonds.f5f2d107605011ac11f3.png",
+    "static/media/ace_of_hearts.png": "/card-counter/static/media/ace_of_hearts.5a72df7d30e47434c2a8.png",
+    "static/media/9_of_hearts.png": "/card-counter/static/media/9_of_hearts.a896f989e7771ab21ac1.png",
+    "static/media/7_of_spades.png": "/card-counter/static/media/7_of_spades.1517728ea424d193c5a7.png",
+    "static/media/6_of_diamonds.png": "/card-counter/static/media/6_of_diamonds.b19504c11d0b1431a746.png",
+    "static/media/5_of_hearts.png": "/card-counter/static/media/5_of_hearts.f407aa6fa30d7a8a1683.png",
+    "static/media/4_of_clubs.png": "/card-counter/static/media/4_of_clubs.e6ba95ce4047b4e077d8.png",
+    "static/media/3_of_spades.png": "/card-counter/static/media/3_of_spades.5aea02209cd1850b2085.png",
+    "static/media/2_of_diamonds.png": "/card-counter/static/media/2_of_diamonds.a51b192d2f2ba1fc1d53.png",
+    "index.html": "/card-counter/index.html",
+    "main.506f238b.css.map": "/card-counter/static/css/main.506f238b.css.map",
+    "main.0797e761.js.map": "/card-counter/static/js/main.0797e761.js.map",
+    "787.d7d63c77.chunk.js.map": "/card-counter/static/js/787.d7d63c77.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.506f238b.css",
+    "static/js/main.0797e761.js"
+  ]
+}
