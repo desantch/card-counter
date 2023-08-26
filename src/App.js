@@ -30,6 +30,7 @@ function App() {
   const [card9,setCard9] = useState('');
   const [card10,setCard10] = useState('');
 
+
   let audio = new Audio('./assets/card_button.mp3')
   const [data, setData] = useState('');
   
@@ -156,20 +157,29 @@ function App() {
   return (
     <div className="App" >
         <div></div>
-        <Text >Welcome to the BlackJack Card Counter</Text>
+        <Text style={{ color: 'gold' }}>Black Jack Card Counter</Text>
         <div>
-        <Button style={{backgroundColor: 'black'}} onClick={handleClick} variant="contained" sx={{m: 1, p: 1,}}> Create Shoe</Button>
+
+        <div><Text style={{ color: 'black' }}>Instructions: <br></br>Step #1: Enter # of decks used for game
+        <br></br>Step #2: Click "Start" to initialize
+        <br></br>Step #3: Click card images to decrement Counter
+        <br></br>Note: application uses the Hi-Lo counting strategy (2-6=+1, 7-9=0, 10-A=-1)
+        </Text></div>
         <div>
-        <TextField className = "textfield"   id="cardsLeft"  InputProps={{ readOnly: true, }}label="Cards in Shoe" variant="outlined" onChange={handleChange} value={cardsLeft}  sx={{m: 1, p: 1,input: {borderColor: 'white',color: "#00ff00",background: "black"}}} />
-        <TextField id="decks"  label="# of Decks" variant="outlined" onChange={deckChange} value={decks} sx={{m: 1, p: 1,input: {color: "#00ff00",background: "black"}}}/>
+        <TextField  id="decks"  label="# of Decks" variant="outlined" onChange={deckChange} value={decks} sx={{m: 1, p: 1,input: {color: "#00ff00",background: "black"}}}/>
+        </div>
+       
+        <Button  size="large" style={{backgroundColor: 'black'}} onClick={handleClick} variant="contained" sx={{m: 1, p: 1, width: 200}}>Start</Button>
+        <div>
+        <TextField className = "textfield"   id="cardsLeft"  InputProps={{ readOnly: true, }}label="Cards in Deck" variant="outlined" onChange={handleChange} value={cardsLeft}  sx={{m: 1, p: 1,input: {borderColor: 'white',color: "#00ff00",background: "black"}}} />
         <div>
         <Card onClick={start} childToParent={childToParent} /></div>
         <div  sx={{width: 200}}>
-        <Grid container spacing={2}>
+        <Grid justifyContent="center" sx={{p: 1}}container spacing={2}>
           <Grid item sm={6}>
           <HiLoTable runningCount={runningCount} trueCount={trueCount} decksLeft={decksLeft} playerEdge={playerEdge}/> 
            </Grid>
-          <Grid item sm={6}>
+          <Grid  item sm={6}>
           <BasicTable  cardsLeft={cardsLeft} likelihood={likelihood} decks={decks} card1={card1} card2={card2} card3={card3} card4={card4} card5={card5} card6={card6} card7={card7} card8={card8} card9={card9} card10={card10} sx={{width: 200,}}/>
           </Grid>
             </Grid>
