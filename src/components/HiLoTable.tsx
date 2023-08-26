@@ -23,7 +23,7 @@ export default function HiLoTable(props) {
   
   const rows = [
    
-    createData(Math.round(((props.runningCount) * 100)*100)/100, Math.round(((props.trueCount) * 100)*100)/100, Math.round(((props.decksLeft) * 100)*100)/100,props.playerEdge),
+    createData(Math.round(((props.runningCount))*100)/100, Math.round(((props.trueCount))*100)/100, Math.round(((props.decksLeft))*100)/100,props.playerEdge),
   
     
 

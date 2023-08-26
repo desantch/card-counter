@@ -30,9 +30,12 @@ function App() {
   const [card9,setCard9] = useState('');
   const [card10,setCard10] = useState('');
 
-
+  let audio = new Audio('./assets/card_button.mp3')
   const [data, setData] = useState('');
   
+  const start = () => {
+    audio.play()
+  }
 
   const childToParent = (childdata) => {
     setData(childdata);
@@ -160,8 +163,8 @@ function App() {
         <TextField className = "textfield"   id="cardsLeft"  InputProps={{ readOnly: true, }}label="Cards in Shoe" variant="outlined" onChange={handleChange} value={cardsLeft}  sx={{m: 1, p: 1,input: {borderColor: 'white',color: "#00ff00",background: "black"}}} />
         <TextField id="decks"  label="# of Decks" variant="outlined" onChange={deckChange} value={decks} sx={{m: 1, p: 1,input: {color: "#00ff00",background: "black"}}}/>
         <div>
-        <Card childToParent={childToParent} /></div>
-        <div  sx={{width: 300}}>
+        <Card onClick={start} childToParent={childToParent} /></div>
+        <div  sx={{width: 200}}>
         <Grid container spacing={2}>
           <Grid item sm={6}>
           <HiLoTable runningCount={runningCount} trueCount={trueCount} decksLeft={decksLeft} playerEdge={playerEdge}/> 
